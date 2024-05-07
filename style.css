@@ -383,21 +383,24 @@ body {
 #topSocials {
 	display: inline-flex;
 	position: absolute;
-	top: 5vw;
-	right: 5vw;
-	width: 250px;
-	height: 50px;
+	top: 4vw;
+	right: 4vw;
+	width: 240px;
+	height: 60px;
 	overflow: hidden;
 }
 
 .topSocialsItem {
+	display: flex;
 	background-color: var(--darkerbg);
 	border-radius: 50%;
 	position: static;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	margin-block: auto;
 	margin-inline: auto;
+	justify-content: center;
+	align-items: center;
 }
 
 .topSocialsItem:hover {
@@ -726,7 +729,6 @@ button:active {
 	margin: 0;
 	padding-inline: 0;
 	padding-block: 3vh;
-	cursor: pointer;
 }
 
 .experience-item {
@@ -738,6 +740,7 @@ button:active {
 }
 
 .experience-item p {
+	cursor: pointer;
 	color: var(--text-second);
 }
 
