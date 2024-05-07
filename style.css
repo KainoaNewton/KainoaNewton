@@ -11,7 +11,6 @@ body {
 	margin: 0;
 }
 
-
 body,
 html {
 	height: 100%;
@@ -74,7 +73,7 @@ small {
 
 body {
 	--text: #f0f0f0;
-	--text-second: #AAAAAA;
+	--text-second: #aaaaaa;
 	--text-third: #555555;
 	--background: #131614;
 	--primary: #abc4b7;
@@ -82,7 +81,7 @@ body {
 	--accent: #53ac7e;
 	--border: rgba(240, 240, 240, 0.2);
 	--darkerbg: rgba(0, 0, 0, 0.8);
-	--opacity: .9;
+	--opacity: 0.9;
 	--divider: rgba(170, 170, 170, 0.2);
 	--skillbg: #f0f0f0;
 }
@@ -90,7 +89,7 @@ body {
 .light-mode {
 	--text: #0f0f0f;
 	--text-second: #555555;
-	--text-third: #AAAAAA;
+	--text-third: #aaaaaa;
 	--background: #e9ecea;
 	--primary: #3b5447;
 	--secondary: #8fbda5;
@@ -114,7 +113,7 @@ body {
 	body {
 		--text: #0f0f0f;
 		--text-second: #555555;
-		--text-third: #AAAAAA;
+		--text-third: #aaaaaa;
 		--background: #e9ecea;
 		--primary: #3b5447;
 		--secondary: #8fbda5;
@@ -136,7 +135,7 @@ body {
 
 	.dark-mode {
 		--text: #f0f0f0;
-		--text-second: #AAAAAA;
+		--text-second: #aaaaaa;
 		--text-third: #555555;
 		--background: #131614;
 		--primary: #abc4b7;
@@ -144,7 +143,7 @@ body {
 		--accent: #53ac7e;
 		--border: rgba(240, 240, 240, 0.2);
 		--darkerbg: rgba(0, 0, 0, 0.8);
-		--opacity: .9;
+		--opacity: 0.9;
 		--divider: rgba(170, 170, 170, 0.2);
 		--skillbg: #f0f0f0;
 	}
@@ -251,7 +250,6 @@ body {
 }
 
 @media only screen and (min-width: 881px) {
-
 	#nav-skills,
 	#nav-experience,
 	#nav-contact,
@@ -403,8 +401,7 @@ body {
 }
 
 .topSocialsItem:hover {
-	width: 50px;
-	height: 50px;
+	background-color: var(--accent);
 }
 
 .nav-bar {
@@ -525,7 +522,6 @@ button:active {
 	display: flex;
 }
 
-
 .skills-section {
 	display: block;
 	width: 100%;
@@ -543,10 +539,12 @@ button:active {
 }
 
 .circle {
-	background-image: linear-gradient(to top left,
-			var(--secondary),
-			var(--accent),
-			var(--primary));
+	background-image: linear-gradient(
+		to top left,
+		var(--secondary),
+		var(--accent),
+		var(--primary)
+	);
 	filter: drop-shadow(0 0 80px var(--accent));
 	overflow: hidden;
 	border-radius: 100vh 100vh 50% 50%;
@@ -595,8 +593,9 @@ button:active {
 
 .skill-item.active {
 	border-style: solid;
-	border-color: var(--primary);
+	border-color: var(--accent);
 	border-width: 5px;
+	box-sizing: border-box;
 }
 
 .skill-title {
@@ -635,7 +634,10 @@ button:active {
 .hero-blob#left {
 	transform: translate(-210%, -100%);
 	z-index: -99;
-	background: linear-gradient(rgb(127, 255, 212, 0.4), rgba(147, 112, 216, .5))
+	background: linear-gradient(
+		rgb(127, 255, 212, 0.4),
+		rgba(147, 112, 216, 0.5)
+	);
 }
 
 .hero-blob#right {
@@ -657,7 +659,10 @@ button:active {
 	aspect-ratio: 1;
 	position: absolute;
 	border-radius: 50%;
-	background: linear-gradient(rgb(127, 255, 212, 0.4), rgba(147, 112, 216, .5));
+	background: linear-gradient(
+		rgb(127, 255, 212, 0.4),
+		rgba(147, 112, 216, 0.5)
+	);
 	filter: blur(100px);
 	z-index: -2;
 	opacity: var(--opacity);
@@ -698,10 +703,13 @@ button:active {
 	-webkit-text-stroke-color: var(--border);
 	padding-top: 5%;
 	display: inline-flex;
-	animation: moving 15s linear infinite;
+	animation: moving 20s linear infinite;
 }
 
 @keyframes moving {
+	0% {
+		transform: translate(100%, 0);
+	}
 	100% {
 		transform: translate(-100%, 0);
 	}
@@ -752,7 +760,6 @@ button:active {
 }
 
 .experience-item p:hover {
-
 	.eititle,
 	.eiplace,
 	.eidate {
