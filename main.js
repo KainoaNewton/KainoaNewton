@@ -1,11 +1,17 @@
 const cursorDot = document.querySelector("[data-cursor-dot]");
+const lag = 5; // Adjust this value to control the lag amount (in pixels)
 
 window.addEventListener("mousemove", function (e) {
 	const posX = e.clientX;
 	const posY = e.clientY;
 
-	cursorDot.style.left = `${posX}px`;
-	cursorDot.style.top = `${posY}px`;
+	// Calculate desired lag positions
+	const lagX = posX - lag;
+	const lagY = posY - lag;
+
+	// Update dot position with lag
+	cursorDot.style.left = `${lagX}px`;
+	cursorDot.style.top = `${lagY}px`;
 });
 
 const tabList = document.querySelector(".skill-list");

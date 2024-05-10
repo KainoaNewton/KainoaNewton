@@ -7,7 +7,6 @@ body {
 	width: 100%;
 	height: 100vh;
 	overflow-x: hidden;
-	cursor: none;
 	margin: 0;
 }
 
@@ -346,6 +345,7 @@ body {
 	position: absolute;
 	top: 2vw;
 	left: 2vw;
+	cursor: pointer;
 }
 
 .logo #inner-circle {
@@ -401,6 +401,7 @@ body {
 	margin-inline: auto;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .topSocialsItem:hover {
@@ -536,7 +537,7 @@ button:active {
 	position: absolute;
 	top: 100vh;
 	width: 100%;
-	height: 310vh;
+	height: 280vh;
 	background-color: var(--background);
 	z-index: -5;
 }
@@ -674,7 +675,7 @@ button:active {
 .main-noise {
 	position: absolute;
 	top: 100vh;
-	height: 310vh;
+	height: 280vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -792,15 +793,105 @@ button:active {
 	}
 }
 
-.contact-section {
+#outro-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 4%;
+	gap: 2%;
+	background-color: var(--background);
+}
+
+#contact-section {
 	overflow: hidden;
 	padding-top: 20%;
 	padding: 4%;
+	width: 600px;
+	margin-right: 5%;
+}
+
+#contact-section h5 {
+	color: var(--text-second);
+	cursor: pointer;
+}
+
+#contact-section h5:hover {
+	color: var(--accent);
+	text-decoration: underline;
+}
+
+#bottomSocials {
+	display: inline-flex;
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	overflow: hidden;
+}
+
+.bottomSocialsItem {
+	display: flex;
+	border-radius: 50%;
+	position: static;
+	width: 40px;
+	height: 40px;
+	margin-block: auto;
+	margin-inline: auto;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.bottomSocialsItem:hover {
+	background-color: var(--accent);
+}
+
+#end-link-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2%;
+}
+
+.end-link {
+	padding: 2%;
+	width: 200px;
+	cursor: pointer;
+}
+
+.end-link p {
+	color: var(--text-second);
+}
+
+.end-link:hover {
+	h5 {
+		color: var(--accent);
+	}
 }
 
 footer {
 	overflow: hidden;
-	padding-top: 20%;
-	padding-bottom: 6%;
+	padding-block: 8%;
 	text-align: center;
+	color: var(--text-second);
+	background-color: var(--background);
+}
+
+.footer-link {
+	text-decoration: none;
+	color: var(--text-second);
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+	color: var(--accent);
+}
+
+footer .quote {
+	color: var(--secondary);
+	margin-top: 3%;
+	cursor: pointer;
+}
+
+footer .quote:hover {
+	.quote-inner {
+		color: var(--accent);
+	}
 }
