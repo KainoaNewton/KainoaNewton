@@ -653,7 +653,7 @@ button:active {
 	width: 15vw;
 	rotate: -50deg;
 	transform: scaleX(-1);
-	fill: var(--accent);
+	fill: var(--primary);
 }
 
 #clickme-text {
@@ -662,6 +662,7 @@ button:active {
 	text-align: center;
 	line-height: 2.5rem;
 	transform: translate(23vw, -4vw);
+	color: var(--primary);
 }
 
 .skill-list {
