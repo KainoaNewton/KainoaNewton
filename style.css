@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 body {
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	width: 100%;
 	height: 100vh;
@@ -17,20 +17,20 @@ html {
 
 h1,
 h2 {
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
 	font-weight: 700;
 	transition: 0.3s;
 }
 
 h3,
 h4 {
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
 	font-weight: 600;
 	transition: 0.2s;
 }
 
 h5 {
-	font-family: "Poppins";
+	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 }
 
@@ -583,8 +583,14 @@ button:active {
 	0% {
 		transform: translateY(-9rem);
 	}
+	35% {
+		transform: translateY(0rem);
+	}
 	50% {
 		transform: translateY(0rem);
+	}
+	85% {
+		transform: translateY(-9rem);
 	}
 }
 
