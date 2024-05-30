@@ -466,10 +466,22 @@
         <p class="quote">"<span class="quote-inner">Programming isn’t about what you know; it’s about what you can
                 look up.</span>" -Kainoa Newton</p>
     </footer>
+    <div id="mobile-ui"></div>
     <script>
         function notCreatedYet() {
             alert("I havn't created that part of the website yet :(");
         }
+
+        function checkScreenWidth() {
+            if (window.screen.width < 400) {
+                alert(
+                    "Sorry this website's mobile version is still being worked on! So if you continue the experience will be terrible."
+                );
+            }
+        }
+
+        window.onload = checkScreenWidth;
+
     </script>
     <script src="particles.min.js"></script>
     <script src="main.js"></script>
