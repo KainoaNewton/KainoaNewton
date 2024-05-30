@@ -1,19 +1,3 @@
-const cursorDot = document.querySelector("[data-cursor-dot]");
-const lag = 5; // Adjust this value to control the lag amount (in pixels)
-
-window.addEventListener("mousemove", function (e) {
-	const posX = e.clientX;
-	const posY = e.clientY;
-
-	// Calculate desired lag positions
-	const lagX = posX - lag;
-	const lagY = posY - lag;
-
-	// Update dot position with lag
-	cursorDot.style.left = `${lagX}px`;
-	cursorDot.style.top = `${lagY}px`;
-});
-
 const tabList = document.querySelector(".skill-list");
 const tabItems = tabList.querySelectorAll(".skill-item");
 const tabContents = document.querySelectorAll(".skill-title");
@@ -128,32 +112,19 @@ requestAnimationFrame(update);
 function showToast(textToCopy) {
 	// Check for Clipboard API support
 	if (navigator.clipboard) {
-		const toastElement = document.getElementById("toast");
-		// Check for element with id toast
-		if (toastElement) {
-			toastElement.classList.add("show");
+		// Create a blob with the text to copy
+		const blob = new Blob([textToCopy], { type: "text/plain" });
 
-			// Create a blob with the text to copy
-			const blob = new Blob([textToCopy], { type: "text/plain" });
-
-			// Attempt to write to clipboard
-			navigator.clipboard
-				.write([new ClipboardItem({ "text/plain": blob })])
-				.then(() => {
-					console.log("Text copied to clipboard successfully.");
-				})
-				.catch((err) => {
-					console.error("Failed to copy text to clipboard:", err);
-				});
-
-			// Schedule removal of the "show" class after 6 seconds
-			setTimeout(() => {
-				toastElement.classList.remove("show");
-			}, 4000);
-			// error message if theirs no element with id toast
-		} else {
-			console.error("Element with ID 'toast' not found.");
-		}
+		// Attempt to write to clipboard
+		navigator.clipboard
+			.write([new ClipboardItem({ "text/plain": blob })])
+			.then(() => {
+				console.log("Text copied to clipboard successfully.");
+			})
+			.catch((err) => {
+				console.error("Failed to copy text to clipboard:", err);
+			});
+		alert("Email copied to clipboard!");
 	} else {
 		console.warn("Clipboard API not supported.");
 	}

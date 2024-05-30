@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kainoa's Portfolio</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <a onclick="notCreatedYet()" id="nav-projects"><span class="nav-transition"></span><span
+                    class="nav-btn">Projects</span></a>
+            <a href="#skills-section" id="nav-skills"><span class="nav-transition"></span><span
+                    class="nav-btn">Skills</span></a>
+            <a href="#experience-section" id="nav-experience"><span class="nav-transition"></span><span
+                    class="nav-btn">Experience</span></a>
+            <a href="#contact-section" id="nav-contact"><span class="nav-transition"></span><span
+                    class="nav-btn">Contact</span></a>
+        </div>
+    </header>
+    <main>
+        <div id="hero-section">
+            <div id="hero-center">
+                <h1 class="hero-first">I’m <span class="hero-kainoa">Kainoa</span>,
+                    <br>
+                    <span class="hero-second">Creative Frontend</span>
+                </h1>
+                <h1 id="hero-third-wrapper"><span class="hero-third">Designer<br>Developer</span></h1>
+                <p style="font-size: 1.5rem;padding-inline: 5%;">I create interactive, animated websites that have fun,
+                    good looking design.</p>
+            </div>
+            <div id="particles-js"></div>
+            <div class="hero-noise"></div>
+            <div class="hero-blob" id="bottom"></div>
+            <div class="hero-blob" id="right"></div>
+            <div class="hero-blob" id="left"></div>
+        </div>
+        <div id="skills-section">
+            <div class="bg"></div>
+            <h2 style="padding: 4%;padding-top: 20%;">My Skill Set</h2>
+            <div class="main-noise"></div>
+            <div class="main-blob" style="transform: translate(-70%, -40%);"></div>
+            <div id="skills-wrapper">
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <img src="images/python.svg" width="80%">
+                    </li>
+                    <li class="skill-item">
+                        <img src="images/html.svg" width="65%">
+                    </li>
+                    <li class="skill-item active">
+                        <img src="images/css.svg" width="75%">
+                    </li>
+                    <li class="skill-item">
+                        <img src="images/js.svg" width="75%">
+                    </li>
+                    <li class="skill-item">
+                        <img src="images/figma.svg" width="50%">
+                    </li>
+                </ul>
+                <div class="skill-content-container">
+                    <div class="circle">
+                        <div>
+                            <div class="skill-title">
+                                <h4>Python</h4>
+                                <h5>Terminal Based</h5>
+                            </div>
+
+                            <div class="skill-title">
+                                <h4>HTML</h4>
+                                <h5>Basic Layout</h5>
+                            </div>
+
+                            <div class="skill-title active">
+                                <h4>Css</h4>
+                                <h5>Style Websites</h5>
+                            </div>
+
+                            <div class="skill-title">
+                                <h4>JavaScript</h4>
+                                <h5>Website Functionality</h5>
+                            </div>
+
+                            <div class="skill-title">
+                                <h4>Figma</h4>
+                                <h5>Design Prototyping</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="skill-text">While not a pro at Python, I have created many projects for it at school, and
+                        also
+                        know how to use turtle and other visual libraries.
+                    </p>
+                    <p class="skill-text">Beyond markup, HTML is crucial for an inclusive web. I structure content
+                        carefully
+                        for universal accessibility.
+                    </p>
+                    <p class="skill-text active">This is what makes any website look good, without it I am nothing :(
+                    </p>
+                    <p class="skill-text">JavaScript brings websites to life, even though I'm not that good at it I
+                        figure
+                        it out most of the time!</p>
+                    <p class="skill-text">While not a full-time UI designer, Figma helps me visualize my designs before
+                        I
+                        acutally code them.
+                    </p>
+                </div>
+            </div>
+            <div id="marquee-section">
+                <p><img src="images/divider.svg" alt=""> frontend developer <img src="images/divider.svg" alt="">
+                    frontend design
+                    <img src="images/divider.svg" alt="">
+                </p>
+            </div>
+        </div>
+        <div id="experience-section">
+            <h2>My Experience</h2>
+            <div class="main-blob" style="transform: translate(-70%, -40%);"></div>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <p>
+                        <span class="eititle">No Job</span>
+                        <span class="eidate">Current - Idk</span>
+                        <br>
+                        <span class="eiplace">I'm in Highschool, so don't have a tech job yet.</span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="experience-item">
+                    <p>
+                        <span class="eititle">Camp Counceler</span>
+                        <span class="eidate">Last Summer + This Summer</span>
+                        <br>
+                        <span class="eiplace">Sea Ranch Kids Camp</span>
+                    </p>
+                    <hr>
+                </div>
+                <div class="experience-item">
+                    <p>
+                        <span class="eititle">Future Job...</span>
+                        <span class="eidate">The Future - Some Time</span>
+                        <br>
+                        <span class="eiplace">Somewhere</span>
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div id="contact-section">
+            <h2>Contact Me</h2>
+            <h5 onclick="showToast('kainoa@kainoanewton.com')">kainoa@kainoanewton.com</h5>
+            <div id="bottomSocials">
+                <a href="https://github.com/KainoaN" target="_blank" class="bottomSocialsItem">
+                    <img src="images/github.svg" width="65%">
+                </a>
+                <a href="https://www.instagram.com/kainoa.bhn/" target="_blank" class="bottomSocialsItem">
+                    <img src="images/instagram.svg" width="60%">
+                </a>
+                <a href="https://www.strava.com/athletes/114128294" target="_blank" class="bottomSocialsItem">
+                    <img src="images/strava.svg" width="50%">
+                </a>
+                <a href="https://www.linkedin.com/in/kainoa-newton-36b193307/" target="_blank"
+                    class="bottomSocialsItem">
+                    <img src="images/linkedin.svg" width="50%">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by <b class="footer-link">Kainoa Newton</b></p>
+        <p>Powered by <a class="footer-link" href="https://vercel.com" target="_blank">Vercel</a> and <a
+                class="footer-link" href="https://github.com" target="_blank">Github</a>.</p>
+        <p class="quote">"<span class="quote-inner">Programming isn’t about what you know; it’s about what you can
+                look up.</span>" -Kainoa Newton</p>
+    </footer>
+    <script>
+        function notCreatedYet() {
+            alert("I havn't created that part of the website yet :(");
+        }
+
+        function checkScreenWidth() {
+            if (window.screen.width > 499) {
+                window.location.href = "index.html";
+            }
+        }
+        document.addEventListener("DOMContentLoaded", checkScreenWidth);
+    </script>
+    <script src="mobile.js"></script>
+</body>
+
+</html>
