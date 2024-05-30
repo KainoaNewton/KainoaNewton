@@ -17,15 +17,14 @@
             </div>
         </div>
         <div class="nav-bar">
-            <button id="nav-skills"><span class="nav-transition"></span><span class="nav-btn">Skills</span></button>
-            <button id="nav-experience"><span class="nav-transition"></span><span
-                    class="nav-btn">Experience</span></button>
-            <button id="nav-contact"><span class="nav-transition"></span><span class="nav-btn">Contact</span></button>
-            <div class="toggler" onclick="darkLight()"><svg class="toggler-svg" width="3.5vh"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
-                </svg></div>
+            <a onclick="notCreatedYet()" id="nav-projects"><span class="nav-transition"></span><span
+                    class="nav-btn">Projects</span></a>
+            <a href="#skills-section" id="nav-skills"><span class="nav-transition"></span><span
+                    class="nav-btn">Skills</span></a>
+            <a href="#experience-section" id="nav-experience"><span class="nav-transition"></span><span
+                    class="nav-btn">Experience</span></a>
+            <a href="#contact-section" id="nav-contact"><span class="nav-transition"></span><span
+                    class="nav-btn">Contact</span></a>
         </div>
         <div class="logo">
             <svg id="logo-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -258,30 +257,31 @@
             </svg>
         </div>
         <div id="topSocials">
-            <div class="topSocialsItem" id="topGithub">
+            <a href="https://github.com/KainoaN" target="_blank" class="topSocialsItem" id="topGithub">
                 <img src="images/github.svg" width="65%">
-            </div>
-            <div class="topSocialsItem" id="topInstagram">
+            </a>
+            <a href="https://www.instagram.com/kainoa.bhn/" target="_blank" class="topSocialsItem" id="topInstagram">
                 <img src="images/instagram.svg" width="60%">
-            </div>
-            <div class="topSocialsItem" id="topStrava">
+            </a>
+            <a href="https://www.strava.com/athletes/114128294" target="_blank" class="topSocialsItem" id="topStrava">
                 <img src="images/strava.svg" width="50%">
-            </div>
-            <div class="topSocialsItem" id="topLinkedin">
+            </a>
+            <a href="https://www.linkedin.com/in/kainoa-newton-36b193307/" target="_blank" class="topSocialsItem"
+                id="topLinkedin">
                 <img src="images/linkedin.svg" width="50%">
-            </div>
+            </a>
         </div>
     </header>
     <main>
-        <div class="hero-section">
+        <div id="hero-section">
             <div id="hero-center">
                 <h1 style="font-size: 7rem;" class="hero-first">I’m <span class="hero-kainoa">Kainoa</span>,
                     <br>
                     <span class="hero-second">Creative Frontend</span>
                 </h1>
                 <h1 id="hero-third-wrapper"><span class="hero-third">Designer<br>Developer</span></h1>
-                <p style="font-size: 1.5rem;padding-inline: 20%;">I create interactive, adaptable, and animated websites
-                    that are easy for everyone to use.</p>
+                <p style="font-size: 1.5rem;padding-inline: 20%;">I create interactive, animated websites that have fun,
+                    good looking design.</p>
             </div>
             <div id="particles-js"></div>
             <div class="hero-noise"></div>
@@ -289,7 +289,7 @@
             <div class="hero-blob" id="right"></div>
             <div class="hero-blob" id="left"></div>
         </div>
-        <div class="skills-section">
+        <div id="skills-section">
             <div class="bg"></div>
             <h2 style="padding: 4%;padding-top: 20%;">My Skill Set</h2>
             <div class="main-noise"></div>
@@ -332,23 +332,6 @@
                     </li>
                 </ul>
             </div>
-            <!-- <div id="clickme-wrapper">
-                <svg id="clickme-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="1920" zoomAndPan="magnify" viewBox="0 0 1440 809.999993" height="1080"
-                    preserveAspectRatio="xMidYMid meet" version="1.0">
-                    <defs>
-                        <clipPath id="46774aaf17">
-                            <path d="M 7 147.601562 L 1435 147.601562 L 1435 662 L 7 662 Z M 7 147.601562 "
-                                clip-rule="nonzero" />
-                        </clipPath>
-                    </defs>
-                    <g clip-path="url(#46774aaf17)">
-                        <path
-                            d="M 23.722656 599.09375 C 1.789062 584.207031 6.449219 566.59375 12.359375 549.773438 C 28.496094 503.183594 52.359375 461.25 88.726562 426.929688 C 204.640625 317.71875 341.917969 246.808594 494.992188 207.488281 C 651.929688 167.144531 806.820312 176.011719 956.601562 240.445312 C 1027.058594 270.785156 1095.925781 304.992188 1167.972656 338.628906 C 1165.359375 330.789062 1162.972656 320.789062 1158.878906 311.355469 C 1131.492188 247.148438 1133.878906 232.035156 1182.859375 181.351562 C 1193.769531 169.988281 1206.722656 160.667969 1221.953125 147.601562 C 1230.132812 160.78125 1236.269531 170.101562 1241.839844 179.761719 C 1301.953125 283.515625 1360.253906 388.40625 1423.324219 490.453125 C 1438.550781 515.226562 1437.1875 534.320312 1427.1875 555.34375 C 1406.957031 597.617188 1371.390625 627.847656 1334.34375 653.871094 C 1321.386719 662.960938 1297.183594 660.007812 1278.886719 657.394531 C 1144.902344 637.734375 1010.351562 630.574219 875.460938 641.371094 C 833.414062 644.777344 791.933594 654.550781 746.476562 661.9375 C 741.476562 648.527344 749.773438 633.640625 757.730469 621.027344 C 795.117188 561.820312 840.574219 512.5 915.121094 502.046875 C 950.351562 497.160156 985.464844 491.933594 1020.695312 487.386719 C 1036.375 485.339844 1052.285156 484.886719 1071.71875 483.410156 C 999.785156 405.222656 683.636719 330.335938 523.289062 351.015625 C 328.28125 376.132812 162.820312 462.5 23.722656 599.09375 Z M 23.722656 599.09375 "
-                            fill-opacity="1" fill-rule="nonzero" />
-                    </g>
-                </svg>
-            </div> -->
             <div class="circle">
                 <div class="skill-content-container">
                     <div class="skill-title">
@@ -384,25 +367,21 @@
                 <p class="skill-text">Beyond markup, HTML is crucial for an inclusive web. I structure content carefully
                     for universal accessibility.
                 </p>
-                <p class="skill-text active">I prioritize pixel perfection, paying close attention to details for
-                    visually
-                    polished and precisely aligned designs, ensuring a seamless user experience.
-                </p>
-                <p class="skill-text">I bring websites to life with JavaScript, adding interactive features and
-                    optimizing performance with clean and efficient code.
-                </p>
-                <p class="skill-text">While not a full-time UI designer, I have an eye for aesthetics, creating visually
-                    appealing and user-friendly interfaces.
+                <p class="skill-text active">This is what makes any website look good, without it I am nothing :(</p>
+                <p class="skill-text">JavaScript brings websites to life, even though I'm not that good at it I figure
+                    it out most of the time!</p>
+                <p class="skill-text">While not a full-time UI designer, Figma helps me visualize my designs before I
+                    acutally code them.
                 </p>
             </div>
-            <div class="marquee-section">
+            <div id="marquee-section">
                 <p><img src="images/divider.svg" alt=""> frontend developer <img src="images/divider.svg" alt="">
                     frontend design
                     <img src="images/divider.svg" alt="">
                 </p>
             </div>
         </div>
-        <div class="experience-section">
+        <div id="experience-section">
             <h2>My Experience</h2>
             <div class="main-blob" style="transform: translate(-70%, -40%);"></div>
             <div class="experience-list">
@@ -417,10 +396,10 @@
                 </div>
                 <div class="experience-item">
                     <p>
-                        <span class="eititle">Future Job...</span>
-                        <span class="eidate">The Future - Some Time</span>
+                        <span class="eititle">Camp Counceler</span>
+                        <span class="eidate">Last Summer + This Summer</span>
                         <br>
-                        <span class="eiplace">Somewhere</span>
+                        <span class="eiplace">Sea Ranch Kids Camp</span>
                     </p>
                     <hr>
                 </div>
@@ -440,41 +419,42 @@
                 <h2>Contact Me</h2>
                 <h5 onclick="showToast('kainoa@kainoanewton.com')">kainoa@kainoanewton.com</h5>
                 <div id="bottomSocials">
-                    <div class="bottomSocialsItem">
+                    <a href="https://github.com/KainoaN" target="_blank" class="bottomSocialsItem">
                         <img src="images/github.svg" width="65%">
-                    </div>
-                    <div class="bottomSocialsItem">
+                    </a>
+                    <a href="https://www.instagram.com/kainoa.bhn/" target="_blank" class="bottomSocialsItem">
                         <img src="images/instagram.svg" width="60%">
-                    </div>
-                    <div class="bottomSocialsItem">
+                    </a>
+                    <a href="https://www.strava.com/athletes/114128294" target="_blank" class="bottomSocialsItem">
                         <img src="images/strava.svg" width="50%">
-                    </div>
-                    <div class="bottomSocialsItem">
+                    </a>
+                    <a href="https://www.linkedin.com/in/kainoa-newton-36b193307/" target="_blank"
+                        class="bottomSocialsItem">
                         <img src="images/linkedin.svg" width="50%">
-                    </div>
+                    </a>
                 </div>
             </div>
             <div id="end-link-section">
-                <div class="end-link">
+                <a onclick="notCreatedYet()" class="end-link">
                     <h5>Projects</h5>
                     <p>Coming soon! Check out all my projects, from websites to apps and more.</p>
-                </div>
-                <div class="end-link">
+                </a>
+                <a href="#skills-section" class="end-link">
                     <h5>Skills</h5>
                     <p>Check out the things
                         I'm good at, from
                         building websites to
                         design and more.</p>
-                </div>
-                <div class="end-link">
+                </a>
+                <a href="#experience-section" class="end-link">
                     <h5>Experience</h5>
                     <p>Look at my previous and current jobs, where I've worked, what I did, and when.</p>
-                </div>
-                <div class="end-link">
+                </a>
+                <a href="#contact-section" class="end-link">
                     <h5>Contact</h5>
                     <p>This section. Get links to all my social media and all the ways you can connect with me.
                     </p>
-                </div>
+                </a>
             </div>
         </div>
     </main>
@@ -485,13 +465,12 @@
         <p class="quote">"<span class="quote-inner">Programming isn’t about what you know; it’s about what you can
                 figure out.</span>" -Chris Pine</p>
     </footer>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        function darkLight() {
-            var element = document.body;
-            element.classList.toggle("light-mode");
+        function notCreatedYet() {
+            alert("I havn't created that part of the website yet :(");
         }
     </script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="main.js"></script>
 </body>
 

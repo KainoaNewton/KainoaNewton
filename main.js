@@ -125,21 +125,6 @@ update = function () {
 };
 requestAnimationFrame(update);
 
-// function showToast() {
-// 	const toastElement = document.getElementById("toast");
-// 	toastElement.classList.add("show");
-// }
-
-// function showToast() {
-// 	const toastElement = document.getElementById("toast");
-// 	toastElement.classList.add("show");
-
-// 	// Schedule removal of the "show" class after 6 seconds
-// 	setTimeout(() => {
-// 		toastElement.classList.remove("show");
-// 	}, 5000);
-// }
-
 function showToast(textToCopy) {
 	// Check for Clipboard API support
 	if (navigator.clipboard) {
