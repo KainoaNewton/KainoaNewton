@@ -187,3 +187,11 @@ function showToast(textToCopy) {
 		console.error("Element with ID 'toast' not found.");
 	}
 }
+
+function checkScreenWidth() {
+	if (window.screen.width < 300) {
+		alert(
+			"Sorry this website's mobile version is still being worked on! So if you continue the experience will be terrible."
+		);
+	}
+}

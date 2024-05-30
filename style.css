@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Poppins:400");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
-html {
+* {
 	scroll-behavior: smooth;
 }
 
@@ -190,6 +190,7 @@ body {
 }
 
 @media only screen and (min-width: 881px) {
+	#nav-projects,
 	#nav-skills,
 	#nav-experience,
 	#nav-contact,
@@ -238,17 +239,6 @@ body {
 
 	.hero-second,
 	.hero-third {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 240px) {
-	.nav-bar {
-		width: 100px;
-		left: 42%;
-	}
-
-	#nav-skills {
 		display: none;
 	}
 }
