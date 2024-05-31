@@ -1,0 +1,21 @@
+{
+    "rewrites": [
+      {
+        "source": "/mobile",
+        "destination": "/mobile.html"
+      },
+      {
+        "source": "/skills",
+        "destination": "/#skills-section"
+      },
+      {
+        "source": "/experience",
+        "destination": "/#experience-section"
+      },
+      {
+        "source": "/contact",
+        "destination": "/#contact-section"
+      }
+    ]
+  }
+  
