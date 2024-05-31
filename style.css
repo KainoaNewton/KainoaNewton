@@ -565,7 +565,7 @@ body {
 	display: flex;
 }
 
-#skills-section {
+#skills {
 	display: block;
 	width: 100%;
 	overflow: hidden;
@@ -780,7 +780,7 @@ body {
 	}
 }
 
-#experience-section {
+#experience {
 	overflow: hidden;
 	padding-top: 20%;
 	padding: 4%;
@@ -867,7 +867,7 @@ body {
 	border-radius: 0 0 8vh 8vh;
 }
 
-#contact-section {
+#contact {
 	overflow: hidden;
 	padding-top: 20%;
 	padding: 4%;
@@ -875,12 +875,12 @@ body {
 	margin-right: 5%;
 }
 
-#contact-section h5 {
+#contact h5 {
 	color: var(--text-second);
 	cursor: pointer;
 }
 
-#contact-section h5:hover {
+#contact h5:hover {
 	color: var(--accent);
 	text-decoration: underline;
 }
