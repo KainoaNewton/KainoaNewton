@@ -78,7 +78,8 @@ body {
 	--text: #f0f0f0;
 	--text-second: #aaaaaa;
 	--text-third: #555555;
-	--background: #131614;
+	--bg-primary: #131614;
+	--bg-secondary: #323935;
 	--primary: #abc4b7;
 	--secondary: #427058;
 	--accent: #53ac7e;
@@ -244,7 +245,7 @@ body {
 }
 
 body {
-	background-color: var(--background);
+	background-color: var(--bg-primary);
 	color: var(--text);
 
 	svg {
@@ -270,6 +271,14 @@ body {
 	top: 2vw;
 	left: 2vw;
 	cursor: pointer;
+}
+
+.logo:hover #inner-circle {
+	fill: var(--text);
+}
+
+.logo:hover #outer-circle {
+	fill: var(--accent);
 }
 
 .logo #inner-circle {
@@ -466,7 +475,7 @@ body {
 }
 
 #hero-section {
-	background: radial-gradient(rgba(11, 14, 12, 1), var(--background));
+	background: radial-gradient(rgba(11, 14, 12, 1), var(--bg-primary));
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -567,8 +576,8 @@ body {
 	position: absolute;
 	top: 100vh;
 	width: 100%;
-	height: 280vh;
-	background-color: var(--background);
+	height: 240vh;
+	background-color: var(--bg-primary);
 	z-index: -5;
 }
 
@@ -727,7 +736,7 @@ body {
 .main-noise {
 	position: absolute;
 	top: 100vh;
-	height: 280vh;
+	height: 240vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -845,12 +854,17 @@ body {
 	}
 }
 
+#outro-bg {
+	background-color: var(--bg-secondary);
+}
+
 #outro-wrapper {
 	display: flex;
 	flex-wrap: nowrap;
 	padding: 4%;
 	gap: 2%;
-	background-color: var(--background);
+	background-color: var(--bg-primary);
+	border-radius: 0 0 8vh 8vh;
 }
 
 #contact-section {
@@ -923,11 +937,21 @@ body {
 }
 
 footer {
-	overflow: hidden;
-	padding-block: 6%;
+	height: 24vh;
+}
+
+#footer-text {
+	z-index: -20;
+	position: fixed;
+	bottom: 0;
+	height: 12vh;
+	padding-top: 60vh;
+	padding-bottom: 6vh;
 	text-align: center;
+	width: 100%;
+	line-height: 0;
 	color: var(--text-second);
-	background-color: var(--background);
+	background-color: var(--bg-secondary);
 }
 
 .footer-link {
