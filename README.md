@@ -1,2 +1,1 @@
-# KN Portfolio
- The code for KN's portfolio website
+➡️ https://www.kainoanewton.com/
