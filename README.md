@@ -1,1 +1,1 @@
-# ➡️ https://www.kainoanewton.com/
+# ➡️ https://kainoa.me
